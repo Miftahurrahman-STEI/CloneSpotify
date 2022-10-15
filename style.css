@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #151515;
+    color: white;
+}
+
+aside{
+    background-color: black;
+    width: 301px;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
+    font-family: 'DM', sans-serif;
+    color: #cccccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+aside .brand{
+    padding: 1.2rem 1rem;
+}
+
+aside .brand img{
+    height: 50px;
+}
+
+.menu,
+.playlist{
+    margin-bottom: 3rem;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu li,
+.playlist li,
+.folder li{
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.playlist img{
+    width: 26px;
+    height: 26px;
+}
+
+.menu li:hover, 
+.playlist li:hover,
+.folder li:hover{
+    color: white;
+    cursor: pointer;
+    background-color: #282828;
+    border-radius: 5px;
+}
+
+nav.top{
+    position: fixed;
+    top: 0;
+    left: 301px;
+    height: 64px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100%; */
+    right: 0;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+nav.top .profile .avatar{
+    width: 30px;
+    height: 30px;
+}
+
+nav.top .action button{
+    background: none;
+    border: none;
+    padding: 0.4rem;
+}
+
+nav.top .profile{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border-radius: 999999px;
+    padding-right: .8rem;
+}
